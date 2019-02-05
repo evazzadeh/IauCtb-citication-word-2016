@@ -1826,7 +1826,14 @@
         <xsl:with-param name="LCID" select="$LCID"/>
       </xsl:call-template>
     </xsl:variable>
-    <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:AuthorsSeparator"/>
+    <xsl:choose>
+      <xsl:when test="$_LCID='1065'">
+        <xsl:text>، </xsl:text>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:AuthorsSeparator"/>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
 
