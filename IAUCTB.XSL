@@ -2113,156 +2113,156 @@
 
     <xsl:choose>
       <xsl:when test="b:Version">
-        <xsl:text>2012.10.26</xsl:text>
+        <xsl:text>2019.02.05</xsl:text>
       </xsl:when>
 
 
       <xsl:when test="b:XslVersion">
-        <xsl:text>16</xsl:text>
+        <xsl:text>2</xsl:text>
       </xsl:when>
 
       <xsl:when test="b:StyleNameLocalized">
         <xsl:choose>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1033'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1025'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1037'">
             <xsl:text>שיקגו</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1041'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='2052'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1028'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1042'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1036'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1040'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='3082'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1043'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1031'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1046'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1049'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1035'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1032'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1081'">
             <xsl:text>शिकागो</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1054'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1057'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1086'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1066'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1053'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1069'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1027'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1030'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1110'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1044'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1061'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1062'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1063'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1045'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='2070'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1029'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1055'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1038'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1048'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1058'">
             <xsl:text>Чикаго</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1026'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1050'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1087'">
             <xsl:text>Чикаго мәнерлер нұсқауы</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='2074'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='3098'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1051'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='1060'">
-            <xsl:text>Slog Chicago</xsl:text>
+            <xsl:text>Slog IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='9242'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:when test="b:StyleNameLocalized/b:Lcid='10266'">
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:when>
           <xsl:otherwise>
-            <xsl:text>Chicago</xsl:text>
+            <xsl:text>IAUCTB</xsl:text>
           </xsl:otherwise>
         </xsl:choose>
       </xsl:when>
