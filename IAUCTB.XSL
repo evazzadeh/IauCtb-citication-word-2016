@@ -2,11 +2,11 @@
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:b="http://schemas.openxmlformats.org/officeDocument/2006/bibliography" xmlns:t="http://www.microsoft.com/temp">
 	<xsl:output method="html" encoding="us-ascii"/>
-	
-	
-	
+
+
+
 	<xsl:template match="*" mode="outputHtml2">
-			<xsl:apply-templates mode="outputHtml"/>		
+			<xsl:apply-templates mode="outputHtml"/>
 	</xsl:template>
 
 	<xsl:template name="StringFormatDot">
@@ -41,7 +41,7 @@
 						<xsl:call-template name="handleSpaces">
 							<xsl:with-param name="field" select="msxsl:node-set($parameters)/t:params/t:param[position() = $pos]"/>
 						</xsl:call-template>
-					</xsl:variable>				
+					</xsl:variable>
 					<xsl:variable name="lastChar">
 						<xsl:value-of select="substring($temp2, string-length($temp2))"/>
 					</xsl:variable>
@@ -63,7 +63,7 @@
 				</xsl:if>
 			</xsl:otherwise>
 		</xsl:choose>
-	</xsl:template>	
+	</xsl:template>
 
 	<xsl:template name="StringFormat">
 		<xsl:param name="format" />
@@ -94,10 +94,10 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
-	
 
 
-	
+
+
 
 
 
@@ -151,7 +151,7 @@
 
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_NoItalics" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -162,7 +162,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:NoItalics"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_TitleOpen" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -173,7 +173,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:TitleOpen"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_TitleClose" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -182,9 +182,9 @@
       </xsl:call-template>
     </xsl:variable>
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:TitleClose"/>
-  </xsl:template>  
+  </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_CitationLong_FML" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -195,7 +195,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:CitationLong/b:FML"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_CitationLong_FM" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -206,7 +206,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:CitationLong/b:FM"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_CitationLong_ML" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -217,7 +217,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:CitationLong/b:ML"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_CitationLong_FL" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -228,7 +228,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:CitationLong/b:FL"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_CitationShort_FML" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -239,7 +239,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:CitationShort/b:FML"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_CitationShort_FM" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -250,7 +250,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:CitationShort/b:FM"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_CitationShort_ML" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -261,7 +261,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:CitationShort/b:ML"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_CitationShort_FL" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -272,7 +272,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:CitationShort/b:FL"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ChapterInCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -283,7 +283,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ChapterInCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ChapterCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -294,7 +294,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ChapterCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ChapterInUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -305,7 +305,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ChapterInUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ChapterUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -316,7 +316,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ChapterUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_InterviewByUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -327,7 +327,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:InterviewByUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ByUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -338,7 +338,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ByUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_InNameUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -349,7 +349,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:InNameUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_AccessedCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -360,7 +360,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:AccessedCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_AccessedUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -371,7 +371,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:AccessedUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_VolumesAfterShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -382,7 +382,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:VolumesAfterShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_OnlineCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -393,7 +393,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:OnlineCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_OnlineUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -404,7 +404,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:OnlineUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_InCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -415,7 +415,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:InCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_InNameCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -426,7 +426,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:InNameCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_WithUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -437,7 +437,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:WithUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_VersionShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -448,7 +448,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:VersionShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_InterviewCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -459,7 +459,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:InterviewCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_InterviewWithCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -470,7 +470,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:InterviewWithCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_InterviewByCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -481,7 +481,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:InterviewByCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ByCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -492,7 +492,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ByCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_AndUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -503,7 +503,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:AndUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_AndOthersUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -514,7 +514,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:AndOthersUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_MotionPictureCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -525,7 +525,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:MotionPictureCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_PatentCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -536,7 +536,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:PatentCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_EditionShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -547,7 +547,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:EditionShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_RetrievedFromCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -558,7 +558,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:RetrievedFromCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_RetrievedCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -569,7 +569,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:RetrievedCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_FromCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -580,7 +580,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:FromCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_FromUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -591,7 +591,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:FromUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_NoDateShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -602,7 +602,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:NoDateShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_NumberShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -613,7 +613,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:NumberShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_NumberShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -624,7 +624,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:NumberShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_PatentNumberShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -635,7 +635,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:PatentNumberShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_PagesCountinousShort" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -646,7 +646,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:PagesCountinousShort"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_PageShort" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -657,7 +657,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:PageShort"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_SineNomineShort" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -668,7 +668,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:SineNomineShort"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_SineLocoShort" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -679,7 +679,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:SineLocoShort"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_SineLocoSineNomineShort" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -690,7 +690,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:SineLocoSineNomineShort"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_VolumeOfShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -701,7 +701,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:VolumeOfShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_VolumesOfShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -712,7 +712,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:VolumesOfShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_VolumeShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -723,7 +723,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:VolumeShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_VolumeShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -734,7 +734,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:VolumeShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_VolumesShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -745,7 +745,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:VolumesShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_VolumesShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -756,7 +756,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:VolumesShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_AuthorShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -767,7 +767,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:AuthorShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_BookAuthorShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -778,7 +778,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:BookAuthorShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ArtistShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -789,7 +789,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ArtistShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_WriterCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -800,7 +800,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:WriterCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_WritersCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -811,7 +811,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:WritersCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_WriterShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -822,7 +822,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:WriterShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ConductedByCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -833,7 +833,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ConductedByCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ConductedByUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -844,7 +844,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ConductedByUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ConductorCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -855,7 +855,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ConductorCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ConductorsCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -866,7 +866,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ConductorsCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ConductorShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -877,7 +877,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ConductorShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ConductorShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -888,7 +888,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ConductorShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ConductorsShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -899,7 +899,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ConductorsShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ConductorsShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -910,7 +910,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ConductorsShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_CounselShortUnCapIso" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -921,7 +921,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:CounselShortUnCapIso"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_CounselShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -932,7 +932,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:CounselShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_DirectedByCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -943,7 +943,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:DirectedByCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_DirectedByUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -954,7 +954,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:DirectedByUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_DirectorCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -965,7 +965,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:DirectorCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_DirectorsCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -976,7 +976,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:DirectorsCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_DirectorShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -987,7 +987,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:DirectorShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_DirectorShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -998,7 +998,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:DirectorShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_DirectorsShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1009,7 +1009,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:DirectorsShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_DirectorsShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1020,7 +1020,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:DirectorsShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_EditedByCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1031,7 +1031,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:EditedByCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_EditedByUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1042,7 +1042,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:EditedByUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_EditorCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1053,7 +1053,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:EditorCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_EditorsCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1064,7 +1064,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:EditorsCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_EditorShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1075,7 +1075,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:EditorShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_EditorShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1086,7 +1086,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:EditorShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_EditorsShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1097,7 +1097,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:EditorsShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_EditorsShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1108,7 +1108,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:EditorsShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_IntervieweeShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1119,7 +1119,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:IntervieweeShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_InterviewerCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1130,7 +1130,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:InterviewerCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_InterviewersCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1141,7 +1141,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:InterviewersCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_InventorShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1152,7 +1152,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:InventorShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_PerformedByCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1163,7 +1163,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:PerformedByCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_PerformedByUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1174,7 +1174,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:PerformedByUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_PerformerCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1185,7 +1185,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:PerformerCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_PerformersCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1196,7 +1196,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:PerformersCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_PerformerShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1207,7 +1207,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:PerformerShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_PerformerShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1218,7 +1218,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:PerformerShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_PerformersShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1229,7 +1229,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:PerformersShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_PerformersShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1240,7 +1240,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:PerformersShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ProducedByCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1251,7 +1251,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ProducedByCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ProducedByUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1262,7 +1262,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ProducedByUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ProducerCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1273,7 +1273,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ProducerCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ProducersCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1284,7 +1284,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ProducersCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ProductionCompanyShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1295,7 +1295,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ProductionCompanyShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ProducerShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1306,7 +1306,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ProducerShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ProducersShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1317,7 +1317,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ProducersShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ProducerShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1328,7 +1328,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ProducerShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_TranslatedByCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1339,7 +1339,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:TranslatedByCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_TranslatedByUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1350,7 +1350,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:TranslatedByUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_TranslatorCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1361,7 +1361,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:TranslatorCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_TranslatorsCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1372,7 +1372,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:TranslatorsCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_TranslatorShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1383,7 +1383,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:TranslatorShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_TranslatorShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1394,7 +1394,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:TranslatorShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_TranslatorsShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1405,7 +1405,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:TranslatorsShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_TranslatorsShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1416,7 +1416,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:TranslatorsShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ComposerCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1427,7 +1427,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ComposerCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ComposersCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1438,7 +1438,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ComposersCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ComposerShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1449,7 +1449,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ComposerShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ComposersShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1460,7 +1460,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ComposersShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_ComposerShortUnCapIso" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1471,7 +1471,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:ComposerShortUnCapIso"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_CompiledByCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1482,7 +1482,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:CompiledByCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_CompiledByUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1493,7 +1493,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:CompiledByUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_CompilerCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1504,7 +1504,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:CompilerCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_CompilersCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1515,7 +1515,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:CompilersCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_CompilerShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1526,7 +1526,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:CompilerShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_CompilerShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1537,7 +1537,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:CompilerShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_CompilersShortCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1548,7 +1548,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:CompilersShortCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_CompilersShortUnCap" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1559,7 +1559,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Strings/b:CompilersShortUnCap"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_str_CompilerShortUnCapIso" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1571,9 +1571,9 @@
   </xsl:template>
 
 
-  
 
-  
+
+
   <xsl:template name="templ_prop_Culture" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1584,7 +1584,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/@Culture"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Direction" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1596,9 +1596,9 @@
   </xsl:template>
 
 
-  
 
-  
+
+
   <xsl:template name="templ_prop_EndChars" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1609,7 +1609,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:EndChars"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_NormalizeSpace" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1618,10 +1618,10 @@
       </xsl:call-template>
     </xsl:variable>
     <xsl:text>no</xsl:text>
-    
+
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Space" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1632,7 +1632,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:Space"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_NonBreakingSpace" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1643,7 +1643,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:NonBreakingSpace"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_ListSeparator" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1654,7 +1654,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:ListSeparator"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Dot" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1665,7 +1665,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:Dot"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_DotInitial" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1676,7 +1676,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:DotInitial"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_GroupSeparator" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1687,7 +1687,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:GroupSeparator"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_EnumSeparator" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1698,7 +1698,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:EnumSeparator"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Equal" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1709,7 +1709,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:Equal"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Enum" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1720,7 +1720,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:Enum"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_OpenQuote" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1731,7 +1731,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:OpenQuote"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_CloseQuote" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1742,7 +1742,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:CloseQuote"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_OpenBracket" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1753,7 +1753,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:OpenBracket"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_CloseBracket" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1764,7 +1764,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:CloseBracket"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_FromToDash" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1775,7 +1775,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:FromToDash"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_OpenLink" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1786,7 +1786,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:OpenLink"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_CloseLink" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1797,7 +1797,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:CloseLink"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_AuthorsSeparator" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1808,7 +1808,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:AuthorsSeparator"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_NoAndBeforeLastAuthor" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1819,43 +1819,43 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:NoAndBeforeLastAuthor"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_SimpleAuthor_F" >
   <xsl:text>%F</xsl:text>
-  
+
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_SimpleAuthor_M" >
   <xsl:text>%M</xsl:text>
-  
+
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_SimpleAuthor_L" >
   <xsl:text>%L</xsl:text>
-  
+
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_SimpleDate_D" >
   <xsl:text>%D</xsl:text>
-  
+
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_SimpleDate_M" >
   <xsl:text>%M</xsl:text>
-  
+
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_SimpleDate_Y" >
   <xsl:text>%Y</xsl:text>
-  
+
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Hyphens" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1866,7 +1866,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:Hyphens"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_APA_DateAccessed_DMY" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1877,7 +1877,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:APA/b:DateAccessed/b:DMY"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_APA_DateAccessed_DM" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1888,7 +1888,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:APA/b:DateAccessed/b:DM"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_APA_DateAccessed_MY" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1899,7 +1899,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:APA/b:DateAccessed/b:MY"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_APA_DateAccessed_DY" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1910,7 +1910,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:APA/b:DateAccessed/b:DY"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_SameAuthor" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1921,7 +1921,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:SameAuthor"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_MainAuthor_FML" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1932,7 +1932,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:MainAuthor/b:FML"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_MainAuthor_FM" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1943,7 +1943,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:MainAuthor/b:FM"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_MainAuthor_ML" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1954,7 +1954,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:MainAuthor/b:ML"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_MainAuthor_FL" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1965,7 +1965,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:MainAuthor/b:FL"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_OtherAuthors_FML" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1976,7 +1976,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:OtherAuthors/b:FML"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_OtherAuthors_FM" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1987,7 +1987,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:OtherAuthors/b:FM"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_OtherAuthors_ML" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -1998,7 +1998,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:OtherAuthors/b:ML"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_OtherAuthors_FL" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -2009,7 +2009,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:OtherAuthors/b:FL"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_SecondaryAuthors_FML" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -2020,7 +2020,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:SecondaryAuthors/b:FML"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_SecondaryAuthors_FM" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -2031,7 +2031,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:SecondaryAuthors/b:FM"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_SecondaryAuthors_ML" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -2042,7 +2042,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:SecondaryAuthors/b:ML"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_SecondaryAuthors_FL" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -2053,7 +2053,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:SecondaryAuthors/b:FL"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_Date_DMY" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -2064,7 +2064,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:Date/b:DMY"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_Date_DM" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -2075,7 +2075,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:Date/b:DM"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_Date_MY" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -2086,7 +2086,7 @@
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:Chicago/b:Date/b:MY"/>
   </xsl:template>
 
-  
+
   <xsl:template name="templ_prop_Chicago_Date_DY" >
     <xsl:param name="LCID" />
     <xsl:variable name="_LCID">
@@ -2518,7 +2518,7 @@
 								</xsl:otherwise>
 							</xsl:choose>
 						</xsl:variable>
-						
+
 						<xsl:variable name="author0">
 							<xsl:choose>
 								<xsl:when test="string-length(msxsl:node-set($ListPopulatedWithMain)/b:Citation/b:Source/b:Author/b:Main/b:Corporate) > 0">
@@ -2616,7 +2616,7 @@
 												<xsl:call-template name="templ_prop_AuthorsSeparator"/>
 											</xsl:when>
 										</xsl:choose>
-		
+
 									</xsl:for-each>
 								</xsl:otherwise>
 							</xsl:choose>
@@ -2705,11 +2705,11 @@
 							</xsl:choose>
 						</xsl:variable>
 
-						
+
 						<xsl:if test="msxsl:node-set($ListPopulatedWithMain)/b:Citation/b:FirstAuthor">
 							<xsl:call-template name="templ_prop_OpenBracket"/>
 						</xsl:if>
-					
+
 						<xsl:if test="msxsl:node-set($ListPopulatedWithMain)/b:Citation/b:PagePrefix">
 							<xsl:value-of select="/b:Citation/b:PagePrefix"/>
 						</xsl:if>
@@ -2728,7 +2728,7 @@
 						<xsl:if test="string-length($author0) = 0 and string-length($title0) = 0 and string-length($yearSimple) = 0">
 							<xsl:value-of select="msxsl:node-set($ListPopulatedWithMain)/b:Citation/b:Source/b:Tag"/>
 						</xsl:if>
-						
+
 						<xsl:if test="string-length($year) > 0 and not(string-length($author0) = 0 and string-length($title0) = 0 and string-length($yearSimple) = 0)">
 							<xsl:if test="string-length($displayAuthor) > 0 or string-length($displayTitle) > 0">
 								<xsl:call-template name="templ_prop_Space"/>
@@ -2759,14 +2759,14 @@
 						<xsl:if test="/b:Citation/b:PageSuffix">
 							<xsl:value-of select="/b:Citation/b:PageSuffix"/>
 						</xsl:if>
-						
+
 						<xsl:if test="/b:Citation/b:LastAuthor">
 							<xsl:call-template name="templ_prop_CloseBracket"/>
 						</xsl:if>
 						<xsl:if test="not(/b:Citation/b:LastAuthor)">
 							<xsl:call-template name="templ_prop_ListSeparator"/>
 						</xsl:if>
-					
+
 
 						</xsl:element>
 					</body>
@@ -2777,7 +2777,7 @@
 
 				<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
 					<head>
-						
+
 						<style>
 							p.MsoBibliography, li.MsoBibliography, div.MsoBibliography
 						</style>
@@ -3257,25 +3257,25 @@
 										</xsl:call-template>
 									</xsl:if>
 								</xsl:variable>
-								
+
 								<xsl:variable name="productionCompanyDot">
 									<xsl:call-template name="appendField_Dot">
 										<xsl:with-param name="field" select="b:ProductionCompany"/>
 									</xsl:call-template>
 								</xsl:variable>
-								
+
 								<xsl:variable name="editionDot">
 									<xsl:call-template name="appendField_Dot">
 										<xsl:with-param name="field" select="b:Edition"/>
 									</xsl:call-template>
 								</xsl:variable>
-								
+
 								<xsl:variable name="broadcastTitle">
 									<xsl:call-template name="handleSpaces">
 										<xsl:with-param name="field" select="b:BroadcastTitle"/>
 									</xsl:call-template>
 								</xsl:variable>
-								
+
 								<xsl:variable name="versionDot">
 									<xsl:call-template name="appendField_Dot">
 										<xsl:with-param name="field" select="b:Version"/>
@@ -3311,13 +3311,13 @@
 										<xsl:with-param name="field" select="b:CaseNumber"/>
 									</xsl:call-template>
 								</xsl:variable>
-								
+
 								<xsl:variable name="broadcaster">
 									<xsl:call-template name="handleSpaces">
 										<xsl:with-param name="field" select="b:Broadcaster"/>
 									</xsl:call-template>
 								</xsl:variable>
-								
+
 								<xsl:variable name="volume">
 									<xsl:call-template name="handleSpaces">
 										<xsl:with-param name="field" select="b:Volume"/>
@@ -3335,7 +3335,7 @@
 								<xsl:variable name="prefixEditorDot">
 									<xsl:if test="string-length($editor)>0">
 										<xsl:if test="$cEditors > 1">
-											
+
 											<xsl:call-template name="templ_str_EditorShortCap"/>
 										</xsl:if>
 										<xsl:if test="$cEditors = 1">
@@ -3381,7 +3381,7 @@
 								<xsl:variable name="prefixPerformerDot">
 									<xsl:if test="string-length($performer)>0">
 										<xsl:if test="$cPerformers > 1">
-											
+
 											<xsl:call-template name="templ_str_PerformerShortCap"/>
 										</xsl:if>
 										<xsl:if test="$cPerformers = 1">
@@ -3492,10 +3492,10 @@
 													</t:param>
 													</t:params>
 												</xsl:with-param>
-										</xsl:call-template>	
+										</xsl:call-template>
 									</xsl:if>
 								</xsl:variable>
-						    
+
 								<xsl:variable name="prefixVolumeDot">
 									<xsl:if test="string-length($prefixVolume)>0">
 										<xsl:call-template name="appendField_Dot">
@@ -3512,7 +3512,7 @@
 			                      <xsl:if test="(string-length($bookTitleDot)>0 or string-length(b:ChapterNumber) > 0) and string-length($prefixVolumeDot)>0">
   			                        <xsl:call-template name="templ_prop_ListSeparator"/>
 				                  </xsl:if>
-				                  
+
 								<xsl:call-template name="StringFormat">
 									<xsl:with-param name="format">
 			                    		<xsl:if test="(string-length($bookTitleDot)>0 or string-length(b:ChapterNumber) > 0) and string-length($prefixVolumeDot)>0">
@@ -3549,7 +3549,7 @@
 												<t:param>
 													<xsl:value-of select="b:ChapterNumber"/>
 												</t:param>
-											</xsl:if>																						
+											</xsl:if>
 											<xsl:if test = "string-length(b:BookTitle)">
 												<t:param>
 											        <xsl:call-template name = "ApplyItalicTitleNS">
@@ -3598,7 +3598,7 @@
 															</t:param>
   														</t:params>
   													</xsl:with-param>
-												</xsl:call-template>	
+												</xsl:call-template>
 											</xsl:with-param>
 										</xsl:call-template>
 									</xsl:if>
@@ -3825,7 +3825,7 @@
 						</xsl:call-template>
 					</xsl:if>
 				</xsl:variable>
-                
+
                 <xsl:variable name="str_EditedByCap">
                   <xsl:call-template name="templ_str_EditedByCap"/>
                 </xsl:variable>
@@ -3875,7 +3875,7 @@
 										<xsl:with-param name="field" select="$theCapLongPrefixCompiler"/>
 									</xsl:call-template>
 								</xsl:variable>
-                
+
                 <xsl:variable name="str_TranslatedByCap">
                   <xsl:call-template name="templ_str_TranslatedByCap"/>
                 </xsl:variable>
@@ -4664,7 +4664,7 @@
 														<xsl:if test="string-length($composerLFDot)>0">
 															<xsl:call-template name="templ_prop_Space"/>
 														</xsl:if>
-				
+
 														<xsl:call-template name = "ApplyItalicTitleNS">
 															<xsl:with-param name = "data">
 																<xsl:value-of select="$titleDot"/>
@@ -5201,7 +5201,7 @@
 												<xsl:if test="string-length($lfAuthor)>0 or string-length($yearDot)>0">
 													<xsl:call-template name="templ_prop_Space"/>
 												</xsl:if>
-		
+
 												<xsl:call-template name = "ApplyItalicTitleNS">
 													<xsl:with-param name = "data">
 														<xsl:value-of select="$titleDot"/>
@@ -5676,7 +5676,7 @@
 	</xsl:template>
 
 	<xsl:template match="*">
-	
+
 		<xsl:element name="{name()}" namespace="{namespace-uri()}">
 			<xsl:for-each select="@*">
 				<xsl:attribute name="{name()}" namespace="{namespace-uri()}">
@@ -5702,7 +5702,7 @@
 		</xsl:call-template>
 	</xsl:template>
 
-	
+
 	<xsl:template name="formatSecondaryName">
 		<xsl:call-template name="formatNameCore">
 			<xsl:with-param name="FML"><xsl:call-template name="templ_prop_Chicago_SecondaryAuthors_FML"/></xsl:with-param>
@@ -5904,7 +5904,7 @@
 			<xsl:call-template name="formatPersons"/>
 		</xsl:for-each>
 	</xsl:template>
-	
+
 	<xsl:template name="formatEditorLF">
 		<xsl:for-each select="b:Author/b:Editor">
 			<xsl:call-template name="formatPersonsAuthor"/>
@@ -6081,7 +6081,7 @@
 					<xsl:with-param name="field" select="b:YearAccessed"/>
 				</xsl:call-template>
 			</xsl:with-param>
-			
+
 			<xsl:with-param name="DMY"><xsl:call-template name="templ_prop_APA_DateAccessed_DMY"/></xsl:with-param>
 			<xsl:with-param name="DM"><xsl:call-template name="templ_prop_APA_DateAccessed_DM"/></xsl:with-param>
 			<xsl:with-param name="MY"><xsl:call-template name="templ_prop_APA_DateAccessed_MY"/></xsl:with-param>
@@ -6215,7 +6215,7 @@
 					<xsl:when test="string-length(./b:Author/b:Compiler)>0">Compiler</xsl:when>
 					<xsl:when test="string-length(./b:Author/b:Translator)>0">Translator</xsl:when>
 				</xsl:choose>
-			</xsl:when>	
+			</xsl:when>
 		</xsl:choose>
 	</xsl:template>
 
@@ -6230,13 +6230,13 @@
 			</xsl:variable>
 			<xsl:element name="{'b:Source'}">
         <xsl:if test="$Type='b:Citation'">
-          
+
           <b:Title>
-            
+
             <xsl:if test="string-length(b:Title)>0">
               <xsl:value-of select="b:Title"/>
             </xsl:if>
-            
+
             <xsl:if test="string-length(b:Title)=0">
               <xsl:choose>
                 <xsl:when test="b:SourceType='Book' or
@@ -6327,19 +6327,19 @@
 
                 <xsl:when test="b:SourceType='Interview'">
                   <xsl:variable name="shortTitle" select="b:ShortTitle"/>
-                  
+
                   <xsl:variable name="broadcastTitle" select="b:BroadcastTitle"/>
-                  
+
 
                   <xsl:choose>
                     <xsl:when test="string-length($shortTitle)>0">
                       <xsl:value-of select="$shortTitle"/>
                     </xsl:when>
-                    
+
                     <xsl:when test="string-length($broadcastTitle)>0">
                       <xsl:value-of select="$broadcastTitle"/>
                     </xsl:when>
-                    
+
                   </xsl:choose>
                 </xsl:when>
 
@@ -6348,7 +6348,7 @@
           </b:Title>
         </xsl:if>
         <b:SortingString>
-        
+
 		          	<xsl:variable name = "author0">
 					  <xsl:for-each select="./b:Author/*[local-name()=$MostImportantAuthorLocalName]">
 					    <xsl:call-template name="formatPersonsAuthor"/>
@@ -6380,8 +6380,8 @@
 						<xsl:text>&#32;</xsl:text>
 						<xsl:value-of select="b:Title"/>
 					</xsl:if>
-					
-					<xsl:variable name="order">	
+
+					<xsl:variable name="order">
 						<xsl:choose>
 							<xsl:when test="$MostImportantAuthorLocalName='Author'"><xsl:text>1</xsl:text></xsl:when>
 							<xsl:when test="$MostImportantAuthorLocalName='Editor'"><xsl:text>2</xsl:text></xsl:when>
@@ -6390,15 +6390,15 @@
 							<xsl:otherwise><xsl:text>1</xsl:text></xsl:otherwise>
 						</xsl:choose>
 					</xsl:variable>
-					
+
 					<xsl:text>&#32;</xsl:text><xsl:value-of select="$order"/>
 				</b:SortingString>
-				<b:Author>		
+				<b:Author>
 					<b:Main>
 						<xsl:if test="string-length(./b:Author/*[local-name()=$MostImportantAuthorLocalName]/b:Corporate)=0">
 							<b:NameList>
-								<xsl:for-each select="./b:Author/*[local-name()=$MostImportantAuthorLocalName]/b:NameList/b:Person">	
-									<b:Person>		
+								<xsl:for-each select="./b:Author/*[local-name()=$MostImportantAuthorLocalName]/b:NameList/b:Person">
+									<b:Person>
 										<b:Last><xsl:value-of select="./b:Last"/></b:Last>
 										<b:First><xsl:value-of select="./b:First"/></b:First>
 										<b:Middle><xsl:value-of select="./b:Middle"/></b:Middle>
@@ -6412,26 +6412,26 @@
 							</b:Corporate>
 						</xsl:if>
 					</b:Main>
-					<xsl:for-each select="./b:Author/*">	
-						
+					<xsl:for-each select="./b:Author/*">
+
 							<xsl:element name="{name()}" namespace="{namespace-uri()}">
-								<xsl:call-template name="copyNameNodes"/>	
+								<xsl:call-template name="copyNameNodes"/>
 							</xsl:element>
-						
+
 					</xsl:for-each>
 				</b:Author>
-				<xsl:for-each select="*">	
+				<xsl:for-each select="*">
             <xsl:if test="name()!='Author' and not(name()='Title' and $Type='b:Citation')">
               <xsl:element name="{name()}" namespace="{namespace-uri()}">
-								<xsl:call-template name="copyNodes"/>	
+								<xsl:call-template name="copyNodes"/>
 							</xsl:element>
 						</xsl:if>
 				</xsl:for-each>
 			</xsl:element>
-			<xsl:for-each select="../*">	
+			<xsl:for-each select="../*">
 						<xsl:if test="local-name()!='Source' and namespace-uri()='http://schemas.openxmlformats.org/officeDocument/2006/bibliography'">
 							<xsl:element name="{name()}" namespace="{namespace-uri()}">
-								<xsl:call-template name="copyNodes"/>	
+								<xsl:call-template name="copyNodes"/>
 							</xsl:element>
 						</xsl:if>
 			</xsl:for-each>
@@ -6444,9 +6444,9 @@
 	<xsl:template name="copyNameNodes">
 		<xsl:if test="string-length(b:Corporate)=0">
 			<b:NameList>
-				<xsl:for-each select="b:NameList/b:Person">	
-					<b:Person>			
-							<xsl:if test="string-length(./b:Last)>0">	
+				<xsl:for-each select="b:NameList/b:Person">
+					<b:Person>
+							<xsl:if test="string-length(./b:Last)>0">
 							<b:Last>
 								<xsl:value-of select="./b:Last"/>
 							</b:Last>
@@ -6484,7 +6484,7 @@
 			</xsl:for-each>
 			<xsl:for-each select="*">
 				<xsl:element name="{name()}" namespace="{namespace-uri()}">
-					<xsl:call-template name="copyNodes2"/>	
+					<xsl:call-template name="copyNodes2"/>
 				</xsl:element>
 			</xsl:for-each>
 	</xsl:template>
@@ -6508,7 +6508,7 @@
 
 	<xsl:template name="appendField_Dot">
 		<xsl:param name="field"/>
-		
+
 		<xsl:variable name="temp">
 			<xsl:call-template name="handleSpaces">
 				<xsl:with-param name="field" select="$field"/>
@@ -6685,13 +6685,13 @@
 	<xsl:template name="templateSpaceAB">
 		<xsl:param name="first"/>
 		<xsl:param name="second"/>
-		
+
 		<xsl:variable name="tempFirst">
 			<xsl:call-template name="handleSpaces">
 				<xsl:with-param name="field" select="$first"/>
 			</xsl:call-template>
 		</xsl:variable>
-		
+
 		<xsl:variable name="tempSecond">
 			<xsl:call-template name="handleSpaces">
 				<xsl:with-param name="field" select="$second"/>
@@ -6722,13 +6722,13 @@
 	<xsl:template name="templateC">
 		<xsl:param name="first"/>
 		<xsl:param name="second"/>
-		
+
 		<xsl:variable name="tempFirst">
 			<xsl:call-template name="handleSpaces">
 				<xsl:with-param name="field" select="$first"/>
 			</xsl:call-template>
 		</xsl:variable>
-		
+
 		<xsl:variable name="tempSecond">
 			<xsl:call-template name="handleSpaces">
 				<xsl:with-param name="field" select="$second"/>
@@ -6759,13 +6759,13 @@
 		<xsl:param name="first"/>
 		<xsl:param name="second"/>
 		<xsl:param name="third"/>
-		
+
 		<xsl:variable name="tempFirst">
 			<xsl:call-template name="handleSpaces">
 				<xsl:with-param name="field" select="$first"/>
 			</xsl:call-template>
 		</xsl:variable>
-		
+
 		<xsl:variable name="tempSecond">
 			<xsl:call-template name="handleSpaces">
 				<xsl:with-param name="field" select="$second"/>
@@ -6837,7 +6837,7 @@
 		<xsl:variable name="monthDayLocal">
 			<xsl:call-template name="getMonthDay"/>
 		</xsl:variable>
-		
+
 		<xsl:variable name="editionTemp">
 			<xsl:call-template name="handleSpaces">
 				<xsl:with-param name="field" select="b:Edition"/>
@@ -6897,12 +6897,12 @@
 			<xsl:with-param name="second" select="b:City"/>
 		</xsl:call-template>
 	</xsl:template>
-	
+
 	<xsl:template name="templateCPMD">
 		<xsl:variable name="monthDayLocal">
 			<xsl:call-template name="getMonthDay"/>
 		</xsl:variable>
-		
+
 		<xsl:call-template name="templateA">
 			<xsl:with-param name="first">
 				<xsl:call-template name="templateCityStateProvince" />
@@ -6911,14 +6911,14 @@
 			<xsl:with-param name="third" select="$monthDayLocal"/>
 		</xsl:call-template>
 	</xsl:template>
-	
+
 	<xsl:template name="templateSC">
 		<xsl:call-template name="templateC">
 			<xsl:with-param name="first" select="b:Station"/>
 			<xsl:with-param name="second" select="b:City"/>
 		</xsl:call-template>
 	</xsl:template>
-	
+
 
 	<xsl:template name="templateCP">
 		<xsl:variable name="patentTemp">
@@ -7080,7 +7080,7 @@
 		<xsl:if test = "string-length($temp) > 0">
 			<xsl:value-of select="$temp"/>
 		</xsl:if>
-		
+
 		<xsl:if test = "string-length(b:Pages) > 0 and string-length($monthDayLocal) = 0">
 			<xsl:if test = "string-length($temp) > 0">
 				<xsl:call-template name="templ_prop_Space"/>
@@ -7208,7 +7208,7 @@
 				<xsl:with-param name="field" select="b:Last"/>
 			</xsl:call-template>
 		</xsl:variable>
-		
+
 		<xsl:variable name="format">
 			<xsl:choose>
 				<xsl:when test="string-length($first) = 0 and string-length($middle) = 0 and string-length($last) = 0 ">
@@ -7236,13 +7236,13 @@
 				</xsl:when>
 			</xsl:choose>
 		</xsl:variable>
-		
+
 		<xsl:call-template name="StringFormatName">
 			<xsl:with-param name="format" select="$format"/>
 			<xsl:with-param name="upperLast" select="$upperLast"/>
 			<xsl:with-param name="withDot" select="$withDot"/>
 		</xsl:call-template>
-		
+
 	</xsl:template>
 
 	<xsl:template name="formatDateCorePrivate">
@@ -7254,9 +7254,9 @@
 		<xsl:param name="day"/>
 		<xsl:param name="month"/>
 		<xsl:param name="year"/>
-		
+
 		<xsl:param name="withDot"/>
-		
+
 		<xsl:variable name="format">
 			<xsl:choose>
 				<xsl:when test="string-length($day) = 0 and string-length($month) = 0 and string-length($year) = 0 ">
@@ -7283,7 +7283,7 @@
 				</xsl:when>
 			</xsl:choose>
 		</xsl:variable>
-		
+
 		<xsl:call-template name="StringFormatDate">
 			<xsl:with-param name="format" select="$format"/>
 
@@ -7293,7 +7293,7 @@
 
 			<xsl:with-param name="withDot" select="$withDot"/>
 		</xsl:call-template>
-		
+
 	</xsl:template>
 
 	<xsl:template name="StringFormatName">
@@ -7349,7 +7349,7 @@
 								</xsl:call-template>
 							</xsl:with-param>
 						</xsl:call-template>
-					</xsl:variable>				
+					</xsl:variable>
 					<xsl:variable name="lastChar">
 						<xsl:value-of select="substring($temp2, string-length($temp2))"/>
 					</xsl:variable>
@@ -7472,12 +7472,12 @@
 		<xsl:param name="month"/>
 		<xsl:param name="year"/>
 		<xsl:param name="displayND"/>
-		
+
 		<xsl:param name="DMY"/>
 		<xsl:param name="DM"/>
 		<xsl:param name="MY"/>
 		<xsl:param name="DY"/>
-	
+
 		<xsl:choose>
 			<xsl:when test="string-length($year)=0 and $displayND = 'yes'">
 				<xsl:call-template name="templ_str_NoDateShortUnCap"/>
@@ -7487,7 +7487,7 @@
 					<xsl:with-param name="day" select="$day"/>
 					<xsl:with-param name="month" select="$month"/>
 					<xsl:with-param name="year" select="$year"/>
-					
+
 					<xsl:with-param name="DMY" select="$DMY"/>
 					<xsl:with-param name="DM" select="$DM"/>
 					<xsl:with-param name="MY" select="$MY"/>
@@ -7495,9 +7495,9 @@
 				</xsl:call-template>
 			</xsl:otherwise>
 		</xsl:choose>
-	
+
 	</xsl:template>
-	
+
 	<xsl:template name="formatNameOneItem">
 		<xsl:param name="format"/>
 
@@ -7529,7 +7529,7 @@
 		</xsl:choose>
 
 	</xsl:template>
-	
+
 	<xsl:template name="formatNameInitial">
 		<xsl:param name="name"/>
 		<xsl:variable name="temp">
@@ -7558,7 +7558,7 @@
 			</xsl:call-template>
 		</xsl:if>
 	</xsl:template>
-	
+
 	<xsl:template name="handleHyphens">
 		<xsl:param name="name"/>
 
@@ -7571,19 +7571,19 @@
 				<xsl:when test="contains($prop_APA_Hyphens, substring($name, 1, 1))">
 					<xsl:value-of select="substring($name, 1, 2)"/>
 					<xsl:call-template name="templ_prop_DotInitial"/>
-					
+
 					<xsl:call-template name="handleHyphens">
 						<xsl:with-param name="name" select="substring($name, 3)"/>
 					</xsl:call-template>
 				</xsl:when>
-				
+
 				<xsl:otherwise>
 					<xsl:call-template name="handleHyphens">
 						<xsl:with-param name="name" select="substring($name, 2)"/>
 					</xsl:call-template>
 				</xsl:otherwise>
 			</xsl:choose>
-			
+
 		</xsl:if>
 
 	</xsl:template>
@@ -7740,13 +7740,13 @@
 					<xsl:call-template name="templ_prop_CloseQuote"/>
 				</xsl:variable>
 				<xsl:choose>
-					<xsl:when test = "string-length($prop_TitleOpen) > 0 and string-length($prop_TitleClose) > 0 and string-length($prop_OpenQuote) > 0 and string-length($prop_CloseQuote) > 0 and 
+					<xsl:when test = "string-length($prop_TitleOpen) > 0 and string-length($prop_TitleClose) > 0 and string-length($prop_OpenQuote) > 0 and string-length($prop_CloseQuote) > 0 and
 					              not(starts-with($data, $prop_TitleOpen) or (substring($data, string-length($data) - string-length($prop_TitleClose)) = $prop_TitleClose) or starts-with($data, $prop_OpenQuote) or (substring($data, string-length($data) - string-length($prop_CloseQuote)) = $prop_CloseQuote))">
 						<xsl:call-template name="templ_prop_TitleOpen"/>
 						<xsl:copy-of select="msxsl:node-set($data)" />
 						<xsl:call-template name="templ_prop_TitleClose"/>
 					</xsl:when>
-					<xsl:when test = "string-length($prop_TitleOpen) > 0 and string-length($prop_TitleClose) > 0 and 
+					<xsl:when test = "string-length($prop_TitleOpen) > 0 and string-length($prop_TitleClose) > 0 and
 					              not(starts-with($data, $prop_TitleOpen) or (substring($data, string-length($data) - string-length($prop_TitleClose)) = $prop_TitleClose))">
 						<xsl:call-template name="templ_prop_TitleOpen"/>
 						<xsl:copy-of select="msxsl:node-set($data)" />
