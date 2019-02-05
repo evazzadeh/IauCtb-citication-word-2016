@@ -19,3 +19,8 @@ find the seperator
     </xsl:variable>
     <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:ListSeparator"/>
   </xsl:template>
+
+
+based on solution
+https://superuser.com/questions/872296/persian-citation-in-microsoft-word
+add conditional mode for fa
