@@ -1651,7 +1651,7 @@
         <xsl:with-param name="LCID" select="$LCID"/>
       </xsl:call-template>
     </xsl:variable>
-    <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:ListSeparator"/>
+    <xsl:text>، </xsl:text>
   </xsl:template>
 
 

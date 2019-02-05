@@ -9,3 +9,13 @@ https://docs.microsoft.com/en-us/office/vba/word/concepts/objects-properties-met
 prop_APA_Hyphens
 templ_prop_Hyphens
 
+find the seperator
+  <xsl:template name="templ_prop_ListSeparator" >
+    <xsl:param name="LCID" />
+    <xsl:variable name="_LCID">
+      <xsl:call-template name="localLCID">
+        <xsl:with-param name="LCID" select="$LCID"/>
+      </xsl:call-template>
+    </xsl:variable>
+    <xsl:value-of select="/*/b:Locals/b:Local[@LCID=$_LCID]/b:General/b:ListSeparator"/>
+  </xsl:template>
