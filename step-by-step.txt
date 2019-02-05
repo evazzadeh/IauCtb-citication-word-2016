@@ -1,0 +1,11 @@
+list of citaions
+C:\Users\Javad\AppData\Roaming\Microsoft\Bibliography\Style
+
+
+Source
+https://docs.microsoft.com/en-us/office/vba/word/concepts/objects-properties-methods/create-custom-bibliography-styles
+
+
+prop_APA_Hyphens
+templ_prop_Hyphens
+
