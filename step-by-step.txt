@@ -24,3 +24,8 @@ find the seperator
 based on solution
 https://superuser.com/questions/872296/persian-citation-in-microsoft-word
 add conditional mode for fa
+
+
+read more about BibWord
+https://github.com/codingo/BibWord
+
